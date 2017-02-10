@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+	<!--link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css"-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+ <!---->	<script type="text/javascript">
+		$(document).ready(function (){
+			//alert("hola mundo");
+
+			$("#btnSumar").click(function(){
+				var n1=parseInt($("#num1").val());
+				var n2=parseInt($("#num2").val());
+				var suma=n1+n2;
+				alert("El resultado de la suma es:" +suma);
+			});
+		});
+	
+
+
+		$(document).ready(function (){
+			//alert("hola mundo");
+
+			$("#btnRestar").click(function(){
+				var n1=parseInt($("#num1").val());
+				var n2=parseInt($("#num2").val());
+				var resta=n1-n2;
+				alert("El resultado de la resta es:" +resta);
+			});
+		});
+	
+	
+	<!---->	<script type="text/javascript">
+		$(document).ready(function (){
+			//alert("hola mundo");
+
+			$("#btnMultiplicacion").click(function(){
+				var n1=parseInt($("#num1").val());
+				var n2=parseInt($("#num2").val());
+				var multiplicación=n1*n2;
+				alert("El resultado de la multiplicación es:" +multiplicación);
+			});
+		});
+
+	
+		$(document).ready(function (){
+			//alert("hola mundo");
+
+			$("#btnDivision").click(function(){
+				var n1=parseInt($("#num1").val());
+				var n2=parseInt($("#num2").val());
+				var división=n1/n2;
+				alert("El resultado de la división es:" +división);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div data-role="page" id="EXAMEN UNIDAD 1">
+		<div data-role="header">
+			<p>EXAMEN UNIDAD 1</p>
+		</div>	
+		<div data-role="content">
+			<p>LOS 3 BOTONES</p>
+       <a href="#OPERACIONES BASICAS" data-role="button" data-transition="slide">OPERACIONES BASICAS Slide</a>
+       <a href="#OBTENER SERIE FIBONACCI" data-role="button" data-transition="slide">OBTENER SERIE FIBONACCI Slide</a>
+       <a href="#DATOS DEL DESARROLLADOR" data-role="button" data-transition="slide">DATOS DEL DESARROLLADOR Slide</a>
+		</div>
+
+<!--otra pagina--> 
+	<div data-role="footer">
+		<p>Pie de la aplicación</p>
+	</div>
+</div>
+
+<div data-role="page" id="DATOS DEL DESARROLLADOR">
+	<div data-role="header">
+		<p>DATOS</p>
+	</div>
+	<div data-role="content">
+		<p>López Hernández Jhhovanny Daniel</p>	
+		<p>yameaburriamerica@live.com</p>
+		<p>N.C. 14940012</p>
+		<p>TELEFONO DE CASA: 53-97-46-06</p>
+		<p>NOMBRE DE LA ASIGNATURA: -----BASE DE DATOS MOVILES----</p>
+    </div>
+
+ <!----><div data-role="footer">
+		<p>Pie de la aplicación</p>			
+		</div>
+	</div>
+
+
+
+
+
+<!--otra pagina--> 
+	<div data-role="footer">
+		<p>Pie de la aplicación</p>
+	</div>
+</div>
+<!----><div data-role="page" id="OPERACIONES BASICAS">
+		<div data-role="header">
+		<p>Operación suma</p>
+		
+		</div>
+		<div data-role="content">
+			<input type="text" id="num1" placeholder="Escribe un número">	
+			<input type="text" id="num2" placeholder="Escribe un segundo número">	
+			<input type="button" id="btnSumar" value="Calcular suma">
+			<input type="button" id="btnRestar" value="Calcular resta">
+			<input type="button" id="btnMultiplicacion" value="Calcular multiplicación">
+			<input type="button" id="btnDivision" value="Calcular división">
+
+			
+		</div>
+
+
+		<div data-role="footer">
+			<p>PIE DE PAGINA</p>
+		</div>
+	</div>	
+</body>
+</html>
